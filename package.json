@@ -1,0 +1,38 @@
+{
+  "name": "node-red-contrib-emotiv",
+  "version": "1.0.0",
+  "description": "Collection of node-red nodes for working with Emotiv's Cortex API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "cortex": "cortex.js",
+      "affect": "affect.js",
+      "device": "device.js",
+      "motion": "motions.js",
+      "raweeg": "raweeg.js",
+      "facexp": "facexp.js",
+      "powers": "powers.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattaylor/node-red-contrib-emotiv.git"
+  },
+  "keywords": [
+    "node-red",
+    "emotiv",
+    "cortex"
+  ],
+  "author": "mat.taylor@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattaylor/node-red-contrib-emotiv/issues"
+  },
+  "homepage": "https://github.com/mattaylor/node-red-contrib-emotiv#readme",
+  "dependencies": {
+    "emocore": "^1.0.0"
+  }
+}
