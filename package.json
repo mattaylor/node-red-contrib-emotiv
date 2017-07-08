@@ -8,13 +8,7 @@
   },
   "node-red": {
     "nodes": {
-      "cortex": "cortex.js",
-      "affect": "affect.js",
-      "device": "device.js",
-      "motion": "motions.js",
-      "raweeg": "raweeg.js",
-      "facexp": "facexp.js",
-      "powers": "powers.js"
+      "emotiv": "emotiv.js"
     }
   },
   "repository": {
@@ -33,6 +27,6 @@
   },
   "homepage": "https://github.com/mattaylor/node-red-contrib-emotiv#readme",
   "dependencies": {
-    "emocore": "^1.0.0"
+    "emocore": ">1.0.0"
   }
 }

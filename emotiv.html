@@ -1,0 +1,56 @@
+<script type="text/javascript">
+  RED.nodes.registerType('emotiv',{
+    inputs:1,
+    outputs:7,
+    category: 'Emotiv',
+    icon: 'bridge.png',
+    color: '#E9967AA',
+    outputLabels:['contact quality', 'motion sensors', 'raw eeg signal', 'affect metrics', 'facial expressions', 'mental commands', 'band powers', 'training events'],
+    align: 'right',
+    defaults: { 
+      name: { value: 'emotiv'},
+      dev: { value: true },
+      mot: { value: false },
+      raw: { value: false },
+      fac: { value: true },
+      cog: { value: true },
+      pow: { value: true }
+    }
+  })
+</script>
+
+<script type="text/x-red" data-template-name="emotiv">
+   <div class="form-row">
+      <label for="node-input-username" style="white-space:nowrap"><i class="fa fa-tag"></i> Name</label>
+      <input type="text" id="node-input-name" placeholder="Emotiv Id">
+   </div>
+   <div class="form-tips"><b>Tip:</b> This is here to help.</div>
+   <!--
+   <div class="form-row">
+      <label for="node-input-password"><i class="fa fa-tag"></i> Name</label>
+      <input type="password" id="node-input-password" placeholder="Password">
+   </div>
+   <div class="form-row">
+      <label for="node-input-license"><i class="fa fa-tag"></i> License</label>
+      <input type="text" id="node-input-license" placeholder="License">
+   </div>
+   -->
+   <div class="form-row">
+      <label style="white-space:nowrap" for="node-input-dev"><i class="fa fa-tag"></i>Contact Quality</label>
+      <input type="checkbox" id="node-input-dev">
+      <label style="white-space:nowrap" for="node-input-eeg"><i class="fa fa-tag"></i> Raw EEG </label>
+      <input type="checkbox" id="node-input-eeg">
+      <label style="white-space:nowrap" for="node-input-cog"><i class="fa fa-tag"></i> Cognitiv Metrics</label>
+      <input type="checkbox" id="node-input-cog">
+      <label style="white-space:nowrap" for="node-input-mot"><i class="fa fa-tag"></i> Motion Sensors</label>
+      <input type="checkbox" id="node-input-mot">
+      <label style="white-space:nowrap" for="node-input-pow"><i class="fa fa-tag"></i> Power Bands</label>
+      <input type="checkbox" id="node-input-pow">
+      <label style="white-space:nowrap" for="node-input-fac"><i class="fa fa-tag"></i> Facial Expressions</label>
+      <input type="checkbox" id="node-input-pow">
+      <label style="white-space:nowrap" for="node-input-com"><i class="fa fa-tag"></i> Mental Commands</label>
+      <input type="checkbox" id="node-input-com">
+      <label style="white-space:nowrap" f for="node-input-com"><i class="fa fa-tag"></i> Training Events</label>
+      <input type="checkbox" id="node-input-tra">
+   </div>
+</script>
